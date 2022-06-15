@@ -31,5 +31,8 @@ void selection_sort(int *array, size_t size);
 
 /* Task 3. Quick sort */
 void quick_sort(int *array, size_t size);
+void swap_the_array(int *array, int count1, int count2, size_t size);
+int quick_sort_partition(int *array, int low, int high, size_t size);
+void quick_sort_check(int *array, int low, int high, size_t size);
 
 #endif
