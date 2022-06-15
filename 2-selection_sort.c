@@ -1,9 +1,10 @@
 #include "sort.h"
 
 /**
- *
- *
- *
+ * selection_sort - is an in-place comparison sorting algorithm
+ * @array: sorted index
+ * @size: size of array
+ * Return: nothing
  */
 
 void selection_sort(int *array, size_t size)
