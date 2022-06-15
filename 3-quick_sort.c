@@ -34,11 +34,12 @@ void quick_sort_check(int *array, int lo, int hi, size_t size)
 }
 
 /**
- * quick_sort_partition- reorders the array so that all elements with values
+ * quick_sort_partition - sorts an array of integers in ascending order
  * @array: array to sort
  * @lo: lowest index
  * @hi: highest index
  * @size: size of the array
+ * Return: array
  */
 
 int quick_sort_partition(int *array, int lo, int hi, size_t size)
@@ -61,7 +62,6 @@ int quick_sort_partition(int *array, int lo, int hi, size_t size)
 /**
  * swap_the_array- swaps two elements
  * @array: array to swap
- * @x: pivot
  * @index1: first index count
  * @index2: second index count
  * @size: size of the array
