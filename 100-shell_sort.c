@@ -1,32 +1,32 @@
 #include "sort.h"
 
 /**
- * shell_sort - sorts an array of integers in ascending order using knuth sequence
- * @array: integers to sort
+ * shell_sort - sort array of int in ascending order
+ * @array: array of int to sort
  * @size: size of the array
  */
 
 void shell_sort(int *array, size_t size)
 {
-	size_t gap = 1, i, j;
-	int aux;
+	size_t space = 1, i, j;
+	int xtra;
 
-	while (gap < size)
-		gap = gap * 3 + 1;
-	gap /= 3;
+	while (space < size)
+		space = space * 3 + 1;
+	space /= 3;
 
-	while (gap)
+	while (space)
 	{
-		for (i = gap; i < size; i++)
+		for (i = space; i < size; i++)
 		{
-			aux = array[i];
-			for (j = i; j >= gap && array[j - gap] > aux; j -= gap)
+			xtra = array[i];
+			for (j = i; j >= space && array[j - space] > xtra; j -= space)
 			{
-				array[j] = array[j - gap];
+				array[j] = array[j - space];
 			}
-			array[j] = aux;
+			array[j] = xtra;
 		}
-		gap /= 3;
+		space /= 3;
 		print_array(array, size);
 	}
 }
