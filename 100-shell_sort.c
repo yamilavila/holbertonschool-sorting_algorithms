@@ -4,6 +4,7 @@
  * shell_sort - sort array of int in ascending order
  * @array: array of int to sort
  * @size: size of the array
+ *
  */
 
 void shell_sort(int *array, size_t size)
